@@ -20,7 +20,7 @@ y_pred = model.predict([[x]])[0]
 # Weryfikacja ręczna
 y_manual = model.coef_[0] * x + model.intercept_
 
-print(f"\n=== PREDYKCJA dla x={x} ===")
+print(f"\n PREDYKCJA dla x={x}")
 print(f"Wynik (model): {y_pred:.6f}")
 print(f"Wynik (ręczny): {y_manual:.6f}")
 print(f"Zgodność: {abs(y_pred - y_manual) < 1e-10}")
